@@ -1,10 +1,9 @@
 import os
-import pickle
 import numpy as np
 import streamlit as st
 
 # =====================================================
-# PATH CONFIG
+# PATH
 # =====================================================
 
 BASE_DIR = os.path.dirname(
@@ -18,17 +17,8 @@ DATASET_DIR = os.path.join(
     "dataset_final"
 )
 
-st.write("BASE_DIR:", BASE_DIR)
-st.write("DATASET_DIR:", DATASET_DIR)
-
-if os.path.exists(DATASET_DIR):
-    st.success("dataset_final ditemukan")
-    st.write(os.listdir(DATASET_DIR))
-else:
-    st.error("dataset_final tidak ditemukan")
-
 # =====================================================
-# LOAD DATASET
+# LOAD DATA
 # =====================================================
 
 @st.cache_data
@@ -76,6 +66,13 @@ def load_dataset():
         )
     )
 
+    class_names = np.load(
+        os.path.join(
+            DATASET_DIR,
+            "classes.npy"
+        ),
+        allow_pickle=True
+    )
 
     return (
         X_train,
@@ -84,7 +81,7 @@ def load_dataset():
         y_train,
         y_val,
         y_test,
-        encoder
+        class_names
     )
 
 (
@@ -94,5 +91,5 @@ def load_dataset():
     y_train,
     y_val,
     y_test,
-    encoder
+    class_names
 ) = load_dataset()
