@@ -285,5 +285,19 @@ for idx, label in enumerate(
         f"{idx:02d} -> {label}"
     )
 
+import pickle
+
+with open(
+    "dataset_final/label_encoder.pkl",
+    "rb"
+) as f:
+
+    encoder = pickle.load(f)
+
+print("Total Classes:", len(encoder.classes_))
+
+for cls in encoder.classes_:
+    print(cls)
+
 print("\nOutput:")
 print(OUTPUT_DIR)
