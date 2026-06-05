@@ -76,15 +76,6 @@ def load_dataset():
         )
     )
 
-    with open(
-        os.path.join(
-            DATASET_DIR,
-            "label_encoder.pkl"
-        ),
-        "rb"
-    ) as f:
-
-        encoder = pickle.load(f)
 
     return (
         X_train,
