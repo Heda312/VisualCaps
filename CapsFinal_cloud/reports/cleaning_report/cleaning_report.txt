@@ -1,0 +1,12 @@
+DATA CLEANING REPORT
+==================================================
+
+Total Files     : 5094
+Valid Files     : 3378
+Removed Files   : 1716
+
+REMOVAL REASONS
+------------------------------
+reason
+too_long     1274
+too_short     442

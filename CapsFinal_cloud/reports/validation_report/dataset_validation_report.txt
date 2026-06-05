@@ -1,0 +1,37 @@
+DATASET VALIDATION REPORT
+============================================================
+
+Total Labels : 49
+Total Videos : 5094
+
+CLASS STATISTICS
+------------------------------
+Min Samples/Class : 100
+Max Samples/Class : 154
+Mean Samples/Class : 103.96
+Median Samples/Class : 101.00
+Imbalance Ratio : 1.54
+
+VIDEO STATISTICS
+------------------------------
+Average Duration : 3.75 sec
+Minimum Duration : 0.99 sec
+Maximum Duration : 7.91 sec
+
+Average FPS : 28.40
+Average Frames : 105.82
+
+UNIQUE RESOLUTIONS
+------------------------------
+ width  height
+  1920    1080
+   512     512
+  1280     720
+   720    1280
+   480     852
+
+VALIDATION ISSUES
+------------------------------
+- Multiple video resolutions detected.
+
+DATASET STATUS : VALID

@@ -1,0 +1,62 @@
+DATASET FINAL
+==================================================
+
+Total Samples : 5094
+Total Classes : 49
+
+Train Samples : 4075
+Validation Samples : 509
+Test Samples : 510
+
+Input Shape : (40, 141)
+
+Classes:
+0 -> 0
+1 -> 1
+2 -> 10
+3 -> 100
+4 -> 1000
+5 -> 2
+6 -> 20
+7 -> 3
+8 -> 4
+9 -> 5
+10 -> 50
+11 -> 500
+12 -> 6
+13 -> 7
+14 -> 8
+15 -> 9
+16 -> A
+17 -> ATM
+18 -> B
+19 -> C
+20 -> D
+21 -> E
+22 -> G
+23 -> H
+24 -> I
+25 -> J
+26 -> JUTA
+27 -> K
+28 -> Kartu ATM
+29 -> L
+30 -> M
+31 -> MILYAR
+32 -> N
+33 -> O
+34 -> P
+35 -> Q
+36 -> R
+37 -> RIBU
+38 -> S
+39 -> Saldo
+40 -> T
+41 -> Transfer
+42 -> U
+43 -> Uang
+44 -> V
+45 -> W
+46 -> X
+47 -> Y
+48 -> Z
