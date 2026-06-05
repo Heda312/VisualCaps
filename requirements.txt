@@ -1,6 +1,0 @@
-streamlit==1.46.0
-plotly==6.1.2
-numpy
-pandas
-scikit-learn
-joblib
